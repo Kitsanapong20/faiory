@@ -1,3 +1,4 @@
+import 'package:faiory/screen/register.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as prefix0;
 
@@ -9,9 +10,33 @@ class Authen extends StatefulWidget {
 class _AuthenState extends State<Authen> {
   //Explicit
   double MyZise = 200;
+  Widget mySizeBox() {
+    return SizedBox(
+      width: 8.0,
+    );
+  }
+
+  Widget singupbutton() {
+    return RaisedButton(
+      child: Text('Sing up '),
+      onPressed: () {
+        print('you click  Sing up ');
+
+        var registerRoute =
+            MaterialPageRoute(builder: (BuildContext context) => Register());
+        Navigator.of(context).push(registerRoute);
+      },
+    );
+  }
+
   Widget singInButton() {
     return RaisedButton(
-      child: Text(' Sing in'), onPressed: (){},
+      color: Colors.pink,
+      child: Text(
+        ' Sing in',
+        style: TextStyle(color: Colors.white),
+      ),
+      onPressed: () {},
     );
   }
 
@@ -19,7 +44,11 @@ class _AuthenState extends State<Authen> {
     return Container(
       width: 220.0,
       child: Row(
-        children: <Widget>[singInButton(), singInButton()],
+        children: <Widget>[
+          Expanded(child: singInButton()),
+          mySizeBox(),
+          Expanded(child: singupbutton()),
+        ],
       ),
     );
   }
@@ -57,7 +86,7 @@ class _AuthenState extends State<Authen> {
   }
 
   Widget showText() {
-    return Text('Wwow look it That!!!',
+    return Text('Hello World',
         style: TextStyle(
             fontSize: 36.0,
             fontWeight: FontWeight.bold,
@@ -70,14 +99,17 @@ class _AuthenState extends State<Authen> {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [Colors.purple, Colors.white])),
         padding: EdgeInsets.only(top: 60.0),
         alignment: Alignment.topCenter,
         child: Column(
           children: <Widget>[
             showlogo(),
             showText(),
+            mailText(),
             passwordText(),
-            mailText()
+            mybutton()
           ],
         ),
       ),
