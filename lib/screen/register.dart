@@ -14,7 +14,7 @@ String nameString,emailString,passwordString;
   Widget uploadButton() {
     return IconButton(
       icon: Icon(Icons.cloud_upload),
-      onPressed: () {
+      onPressed: () { 
         print('Uploadddddd');
         if (formkey.currentState.validate()) {
           formkey.currentState.save();

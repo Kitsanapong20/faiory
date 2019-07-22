@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "629967787983",
+    "firebase_url": "https://jamesfirstfirebase.firebaseio.com",
+    "project_id": "jamesfirstfirebase",
+    "storage_bucket": "jamesfirstfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629967787983:android:6d04ccaa11d4a90d",
+        "android_client_info": {
+          "package_name": "th.in.androidthai.faiory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629967787983-pabrlspj5fo3go47gva5rorbf0lt6h30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHJSvIsviSzx3SXhVqOYD4Ahsk8K8DqS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629967787983-pabrlspj5fo3go47gva5rorbf0lt6h30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

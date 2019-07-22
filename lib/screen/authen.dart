@@ -86,12 +86,12 @@ class _AuthenState extends State<Authen> {
   }
 
   Widget showText() {
-    return Text('Hello World',
+    return Text('Drug Alert',
         style: TextStyle(
             fontSize: 36.0,
             fontWeight: FontWeight.bold,
-            color: Colors.pink[800],
-            fontFamily: 'THSarabunBold'));
+            color: Colors.lightBlue[500],
+            fontFamily: 'Courier'));
   }
 
   @override
